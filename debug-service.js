@@ -46,7 +46,7 @@ class DebugService {
             this.seperator(`DISCONNECTED FROM INTERNET`);
         } else {
             const buildConnectionString = () => {
-                return `${type.toUpperCase()}${effectiveType === "unknown"
+                return `${type}${effectiveType === "unknown"
                     ? ""
                     : ` - ${effectiveType}`}`;
             };
@@ -70,7 +70,7 @@ class DebugService {
     }
 
     _handleAppStateChange(currentAppState) {
-        this.seperator(`APP STATE: ${currentAppState.toUpperCase()}`);
+        this.seperator(`APP STATE: ${currentAppState}`);
     }
 
     setupRNErrorLogging() {

@@ -178,7 +178,7 @@ export default class Debug extends React.Component {
                     <Text
                         style={[styles.logRowMessage, styles.logRowLevelLabel]}
                     >
-                        {`[${rowData.level.toUpperCase()}]`}
+                        {`[${rowData.level}]`}
                     </Text>
                     <Text
                         style={[
